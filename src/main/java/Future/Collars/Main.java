@@ -8,7 +8,7 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the number of seconds to be converted: ");
         double seconds = sc.nextInt();
-        double convertToMinutes = secondsToMinutesConverter(seconds);
+        double convertToMinutes = SecondsToMinutes.secondsToMinutesConverter(seconds);
         if (convertToMinutes <= 1) {
             numberOfMinutes = " Minute.";
         } else {
@@ -17,12 +17,7 @@ public class Main {
 
         System.out.println(seconds + " Seconds = " + convertToMinutes + numberOfMinutes);
 
-
     }
 
-    static final int min = 60;
 
-    public static double secondsToMinutesConverter(double seconds) {
-        return seconds / min;
-    }
 }

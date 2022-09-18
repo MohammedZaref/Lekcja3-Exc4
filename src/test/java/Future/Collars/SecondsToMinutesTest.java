@@ -7,7 +7,7 @@ class SecondsToMinutesTest {
     @Test
     void shouldConvertSecondsToMinutes() {
         var secondsToMinutes = new SecondsToMinutes();
-        Assertions.assertEquals(4, SecondsToMinutes.secondsToMinutesConverter(240));
+        Assertions.assertEquals(5, SecondsToMinutes.secondsToMinutesConverter(240));
 
     }
 
